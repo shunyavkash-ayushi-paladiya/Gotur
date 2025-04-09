@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gotur</title>
+    <link rel="stylesheet" href="assests/css/main.css">
+</head>
+
+<body>
+    <!-- Header section  -->
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <div class="header-logo">
+                    <img src="assests/images/logo/logo-light.webp" alt="header-logo">
+                </div>
+                <div class="header-unorderlist">
+                    <ul>
+                        <li>
+                            <a href="#" class="header-list">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header-list">Popular Tours</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header-list">About</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header-list">Destination</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header-list">Testimonials</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header-list">Blog</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="hederlist-menu" id="openModal">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 6l16 0" />
+                            <path d="M4 12l16 0" />
+                            <path d="M4 18l16 0" />
+                        </svg>
+                    </button>
+                    <a href="#" class="header-search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-search">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                            <path d="M21 21l-6 -6" />
+                        </svg>
+                    </a>
+                    <a href="#" class="header-cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-shopping-cart">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M6 2a1 1 0 0 1 .993 .883l.007 .117v1.068l13.071 .935a1 1 0 0 1 .929 1.024l-.01 .114l-1 7a1 1 0 0 1 -.877 .853l-.113 .006h-12v2h10a3 3 0 1 1 -2.995 3.176l-.005 -.176l.005 -.176c.017 -.288 .074 -.564 .166 -.824h-5.342a3 3 0 1 1 -5.824 1.176l-.005 -.176l.005 -.176a3.002 3.002 0 0 1 1.995 -2.654v-12.17h-1a1 1 0 0 1 -.993 -.883l-.007 -.117a1 1 0 0 1 .883 -.993l.117 -.007h2zm0 16a1 1 0 1 0 0 2a1 1 0 0 0 0 -2zm11 0a1 1 0 1 0 0 2a1 1 0 0 0 0 -2z" />
+                        </svg>
+                    </a>
+                    <button type="button" class="header-menu" id="openModals">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-menu-4">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M7 6h10" />
+                            <path d="M4 12h16" />
+                            <path d="M7 12h13" />
+                            <path d="M7 18h10" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="report" id="report-modal">
+        <div class="close-icons" id="close-modal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-x">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M18 6l-12 12" />
+                <path d="M6 6l12 12" />
+            </svg>
+        </div>
+        <div class="reports-contents">
+            <div class="reports-logo">
+                <img src="assests/images/logo/logo-light.webp" alt="reports-logo">
+            </div>
+            <ul class="reports-unorderlist">
+                <li>
+                    <a href="#" class="reports-list">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="reports-list">Popular Tours</a>
+                </li>
+                <li>
+                    <a href="#" class="reports-list">About</a>
+                </li>
+                <li>
+                    <a href="#" class="reports-list">Destination</a>
+                </li>
+                <li>
+                    <a href="#" class="reports-list">Testimonials</a>
+                </li>
+                <li>
+                    <a href="#" class="reports-list">Blog</a>
+                </li>
+            </ul>
+            <div class="reports-details">
+                <a href="mailto:needhelp@gotur.com" class="reports-mail">
+                    <div class="reports-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-mail">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M22 7.535v9.465a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-9.465l9.445 6.297l.116 .066a1 1 0 0 0 .878 0l.116 -.066l9.445 -6.297z" />
+                            <path
+                                d="M19 4c1.08 0 2.027 .57 2.555 1.427l-9.555 6.37l-9.555 -6.37a2.999 2.999 0 0 1 2.354 -1.42l.201 -.007h14z" />
+                        </svg>
+                    </div>
+                    <h5 class="reports-mail-detail">
+                        needhelp@gotur.com
+                    </h5>
+                </a>
+                <a href="tel:+91 5698 0036 420" class="reports-mail">
+                    <div class="reports-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="24" viewBox="0 0 24 24"
+                            fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-phone">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M9 3a1 1 0 0 1 .877 .519l.051 .11l2 5a1 1 0 0 1 -.313 1.16l-.1 .068l-1.674 1.004l.063 .103a10 10 0 0 0 3.132 3.132l.102 .062l1.005 -1.672a1 1 0 0 1 1.113 -.453l.115 .039l5 2a1 1 0 0 1 .622 .807l.007 .121v4c0 1.657 -1.343 3 -3.06 2.998c-8.579 -.521 -15.418 -7.36 -15.94 -15.998a3 3 0 0 1 2.824 -2.995l.176 -.005h4z" />
+                        </svg>
+                    </div>
+                    <h5 class="reports-mail-detail">
+                        +91 5698 0036 420
+                    </h5>
+                </a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" class="facebook">
+                    <svg id="Group_2573" data-name="Group 2573" xmlns="http://www.w3.org/2000/svg" width="13.699"
+                        height="20.354" viewBox="0 0 13.699 29.354">
+                        <path id="Path_3" data-name="Path 3"
+                            d="M965.764,512.9v4.04H962.8v4.942h2.961v14.687h6.082V521.888h4.081s.383-2.369.568-4.961h-4.626v-3.379a1.434,1.434,0,0,1,1.319-1.183H976.5v-5.145H972c-6.381,0-6.231,4.947-6.231,5.685Zm0,0"
+                            transform="translate(-962.803 -507.219)" fill="currentColor"></path>
+                    </svg>
+                </a>
+                <a href="https://x.com/?lang=en" class="twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+                        <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+                    </svg>
+                </a>
+                <a href="https://in.linkedin.com/" class="linkedin">
+                    <svg id="Group_2572" data-name="Group 2572" xmlns="http://www.w3.org/2000/svg" width="20.962"
+                        height="24.765" viewBox="0 0 26.962 25.765">
+                        <path id="Path_12139" data-name="Path 12139"
+                            d="M1197.542,523.6v9.969h-5.78v-9.3c0-2.336-.834-3.93-2.926-3.93a3.161,3.161,0,0,0-2.966,2.114,3.976,3.976,0,0,0-.191,1.409v9.709H1179.9s.078-15.754,0-17.384h5.781v2.463c-.012.019-.028.038-.038.056h.038v-.056a5.739,5.739,0,0,1,5.209-2.872c3.8,0,6.654,2.485,6.654,7.824Zm-23.692-15.8a3.012,3.012,0,1,0-.076,6.007h.039a3.013,3.013,0,1,0,.037-6.007Zm-2.927,25.765h5.778V516.187h-5.778Zm0,0"
+                            transform="translate(-1170.58 -507.806)" fill="currentColor"></path>
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com/" class="youtube">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-brand-youtube">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-12a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-9 6v6a1 1 0 0 0 1.514 .857l5 -3a1 1 0 0 0 0 -1.714l-5 -3a1 1 0 0 0 -1.514 .857z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="reports" id="report-modals">
+        <div class="close-icon" id="close-modal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-x">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M18 6l-12 12" />
+                <path d="M6 6l12 12" />
+            </svg>
+        </div>
+        <div class="reports-content">
+            <div class="report-logo">
+                <img src="assests/images/logo/logo-landing.webp" alt="report-logo">
+            </div>
+            <h4 class="report-head">
+                We’re Number One Travel Adventure Company
+            </h4>
+            <p class="report-para">
+                It is a long established fact that a reader will be distracted the readable content of a page when
+                looking at layout the point of using lorem the is Ipsum less normal distribution of letters.
+            </p>
+            <h4 class="report-title">
+                Contact Us
+            </h4>
+            <a href="mailto:info@company.com" class="report-detail">
+                <div href="#" class="report-email">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-mail">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M22 7.535v9.465a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-9.465l9.445 6.297l.116 .066a1 1 0 0 0 .878 0l.116 -.066l9.445 -6.297z" />
+                        <path
+                            d="M19 4c1.08 0 2.027 .57 2.555 1.427l-9.555 6.37l-9.555 -6.37a2.999 2.999 0 0 1 2.354 -1.42l.201 -.007h14z" />
+                    </svg>
+                </div>
+                <div class="email-detail">
+                    <h5 class="email-info">
+                        Send Email
+                    </h5>
+                    <div class="email">
+                        info@company.com
+                    </div>
+                </div>
+            </a>
+            <a href="tel:+91 123 654 900" class="report-detail">
+                <div href="#" class="report-email">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-phone-ringing">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M20 4l-2 2" />
+                        <path d="M22 10.5l-2.5 -.5" />
+                        <path d="M13.5 2l.5 2.5" />
+                        <path
+                            d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2c-8.072 -.49 -14.51 -6.928 -15 -15a2 2 0 0 1 2 -2" />
+                    </svg>
+                </div>
+                <div class="email-detail">
+                    <h5 class="email-info">
+                        Call Agent
+                    </h5>
+                    <div class="email">
+                        +91 123 654 900
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="report-detail">
+                <div href="#" class="report-email">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-clock-hour-5">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                        <path d="M12 12l2 3" />
+                        <path d="M12 7v5" />
+                    </svg>
+                </div>
+                <div class="email-detail">
+                    <h5 class="email-info">
+                        Opening Time
+                    </h5>
+                    <div class="email">
+                        Hours: Mon-Fri: 8am – 7pm
+                    </div>
+                </div>
+            </a>
+            <h4 class="notification">
+                Get Notification
+            </h4>
+            <input type="text" placeholder="Email" class="email-input" required>
+            <button type="submit" class="subscribe">
+                Subscribe Now
+            </button>
+        </div>
+    </div>
+
+    <!-- Hero section  -->
+    <section class="hero">
+        <img src="assests/images/section/main-slider-4-2.webp" alt="hero-img" loading="lazy">
+        <div class="container">
+            <div class="hero-inner">
+                <h4 class="hero-title">
+                    Discover Your Listening
+                </h4>
+                <h2 class="hero-head">
+                    Let's Discover This Tour
+                </h2>
+                <div class="search-bar">
+                    <div class="search-block">
+                        <span class="icons">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                                <path
+                                    d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                            </svg>
+                        </span>
+                        <div class="search-item">
+                            <label>Location</label>
+                            <select>
+                                <option>Australia</option>
+                                <option>USA</option>
+                                <option>Japan</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="search-block">
+                        <span class="icons">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-trekking">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M12 4m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                                <path d="M7 21l2 -4" />
+                                <path d="M13 21v-4l-3 -3l1 -6l3 4l3 2" />
+                                <path
+                                    d="M10 14l-1.827 -1.218a2 2 0 0 1 -.831 -2.15l.28 -1.117a2 2 0 0 1 1.939 -1.515h1.439l4 1l3 -2" />
+                                <path d="M17 12v9" />
+                                <path d="M16 20h2" />
+                            </svg>
+                        </span>
+                        <div class="search-item">
+                            <label>Activities Type</label>
+                            <select>
+                                <option>Adventure</option>
+                                <option>Relaxation</option>
+                                <option>Cultural</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="search-block">
+                        <span class="icons">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-clock-hour-5">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                                <path d="M12 12l2 3" />
+                                <path d="M12 7v5" />
+                            </svg>
+                        </span>
+                        <div class="search-item">
+                            <label>Activate Day</label>
+                            <input type="text" value="Feb 5 - 5" />
+                        </div>
+                    </div>
+
+                    <div class="search-block">
+                        <span class="icons">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-users-group">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                                <path d="M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1" />
+                                <path d="M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                                <path d="M17 10h2a2 2 0 0 1 2 2v1" />
+                                <path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                                <path d="M3 13v-1a2 2 0 0 1 2 -2h2" />
+                            </svg>
+                        </span>
+                        <div class="search-item">
+                            <label>Traveler</label>
+                            <input type="number" value="2" min="1" />
+                        </div>
+                    </div>
+
+                    <button class="search-btn">Search</button>
+                </div>
+            </div>
+    </section>
+
+    <!-- Listing section  -->
+     <section class="listing">
+        <div class="container">
+            <div class="listing-inner">
+                <h5 class="listing-title">
+                    Popular Tours List
+                </h5>
+                <h4 class="listing-head">
+                    New Listings in Our Tour
+                </h4>
+                <div class="filter-box">
+                    <div class="dropdown">
+                      <select>
+                        <option>Locations</option>
+                        <option>New York</option>
+                        <option>Paris</option>
+                        <option>Tokyo</option>
+                      </select>
+                    </div>
+                    <div class="dropdown">
+                      <select>
+                        <option>Hotel Type</option>
+                        <option>Luxury</option>
+                        <option>Budget</option>
+                        <option>Hostel</option>
+                      </select>
+                    </div>
+                    <div class="dropdown">
+                      <select>
+                        <option>Tour Budget</option>
+                        <option>Low</option>
+                        <option>Medium</option>
+                        <option>High</option>
+                      </select>
+                    </div>
+                    <div class="dropdown">
+                      <select>
+                        <option>Activates Type</option>
+                        <option>Adventure</option>
+                        <option>Relaxation</option>
+                        <option>Culture</option>
+                      </select>
+                    </div>
+                    <div class="dropdown">
+                      <select>
+                        <option>Hotel Type</option>
+                        <option>Resort</option>
+                        <option>Inn</option>
+                      </select>
+                    </div>
+                    <div class="dropdown">
+                      <select>
+                        <option>Reviews</option>
+                        <option>5 Stars</option>
+                        <option>4 Stars</option>
+                      </select>
+                    </div>
+                    <div class="dropdown">
+                      <select>
+                        <option>Filter Price</option>
+                        <option>Below $100</option>
+                        <option>$100 - $500</option>
+                        <option>Above $500</option>
+                      </select>
+                    </div>
+                    <button class="search-btns">Search Now</button>
+                  </div>
+            </div>
+        </div>
+     </section>
+
+    <script src="assests/js/main.js"></script>
+
+</body>
+
+</html>
+
